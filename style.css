@@ -1,79 +1,102 @@
-
-*{
+/* General Reset */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+
+/* Body Styling */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Heading Styling */
+h1 {
+  line-height: 2rem;
+}
+
+/* Container */
+.container {
+  width: 80vw;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
 }
-.container{
-  width: 80vw;
-  height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  flex-direction:column;
-  border: 0.2rem solid red;
-  
 
+.container p {
+  line-height: 2rem;
 }
-.game-div{
+
+/* Game Div Styling */
+.game-div {
   width: 70vw;
-  height: 60vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 1rem;
   padding: 0.5rem;
-  gap: 1rem;
-  border: 0.2rem solid red;
+  gap: 1rem; /* Increased gap for better alignment */
 }
-.inner{
-  width: 22vw;
+
+/* Inner Div Styling */
+.inner {
+  width: 20vw;
   aspect-ratio: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 0.2rem solid red;
-  
-  & img{
-   width: 100%;
-   padding: 0.5rem;
-  }
-  .result-div{
-    display: flex;
-   justify-content: center;
-   align-items: center;
-
-  }
-
-  & button{
-    text-transform: uppercase;
-    font-weight: bolder;
-    width: 8.2rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    padding: 0.3rem 1rem;
-    border-radius: 0.3rem;
-    border: none;
-    background-color: yellowgreen;
-    -webkit-border-radius: 0.3rem;
-    -moz-border-radius: 0.3rem;
-    -ms-border-radius: 0.3rem;
-    -o-border-radius: 0.3rem;
 }
+
+.inner img {
+  width: 100%;
+  padding: 0.5rem; /* Adjusted padding for better visual balance */
 }
-img:hover{
-  background-color: khaki;
+
+img:hover {
+  background-color: burlywood;
   border-radius: 0.3rem;
-  -webkit-border-radius: 0.3rem;
-  -moz-border-radius: 0.3rem;
-  -ms-border-radius: 0.3rem;
-  -o-border-radius: 0.3rem;
+}
+
+/* Button Styling */
+button {
+  text-transform: uppercase;
+  font-weight: bolder;
+  width: 8.2rem; /* Ensures consistent button width */
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.3rem 0.5rem; /* Adjusted padding as per request */
+  border-radius: 0.3rem;
+  border: none;
+  background-color: slategrey;
+  color: white; /* Improved text visibility */
+}
+
+button:hover {
+  color: burlywood;
+  background-color: #2f4f4f; /* Slightly darker background on hover */
+}
+
+/* Result Text Styling */
+.player-move {
+  font-weight: bold;
+  color: blue; /* Player's move in bold blue */
+}
+
+.computer-move {
+  font-weight: bold;
+  color: red; /* Computer's move in bold red */
+}
+
+/* Result Div */
+.result-div {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.2rem; /* Slightly larger font for readability */
 }

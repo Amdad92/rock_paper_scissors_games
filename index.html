@@ -8,22 +8,28 @@
 </head>
 <body>
      <h1>Rock Paper and Scissors Game</h1>
-      <p>Make your Move</p>
     <div class="container">
+      <p>Make your Move</p>
       <div class="game-div">
         <div class="rock inner" >
           <img src="/assests/rock.png" alt="rock_image">
-          <button>Rock</button>
+          <button id="rock">Rock</button>
         </div>
         <div class="paper inner">
           <img src="/assests/paper.png" alt="paper_image">
-          <button>Paper</button>
+          <button id="paper">Paper</button>
         </div>
-        <div class="scissors inner">
+        <div class="scissors inner inner3">
           <img src="/assests/scissors.png" alt="scissors_image">
-          <button>Scissors</button>
+          <button id="scissors">Scissors</button>
         </div>
       </div>
+    </div>
+    <div class="result-div">
+      <p id="js-move"></p>
+      <p id="js-result"></p>
+      <p id="js_score_update"></p>
+      <button id="reset">Reset</button>
     </div>
     
     <script src="/app.js"></script>
