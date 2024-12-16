@@ -1,0 +1,79 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.container{
+  width: 80vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction:column;
+  border: 0.2rem solid red;
+  
+
+}
+.game-div{
+  width: 70vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  gap: 1rem;
+  border: 0.2rem solid red;
+}
+.inner{
+  width: 22vw;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 0.2rem solid red;
+  
+  & img{
+   width: 100%;
+   padding: 0.5rem;
+  }
+  .result-div{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+
+  }
+
+  & button{
+    text-transform: uppercase;
+    font-weight: bolder;
+    width: 8.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.3rem 1rem;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: yellowgreen;
+    -webkit-border-radius: 0.3rem;
+    -moz-border-radius: 0.3rem;
+    -ms-border-radius: 0.3rem;
+    -o-border-radius: 0.3rem;
+}
+}
+img:hover{
+  background-color: khaki;
+  border-radius: 0.3rem;
+  -webkit-border-radius: 0.3rem;
+  -moz-border-radius: 0.3rem;
+  -ms-border-radius: 0.3rem;
+  -o-border-radius: 0.3rem;
+}
